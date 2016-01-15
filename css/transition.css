@@ -1,12 +1,11 @@
-.comein{
-    transform: translateY(200px);
-    -webkit-transition:all 0.26s ease-out;
-    -moz-transition:all 0.26s ease-out;
-    -ms-transition:all 0.26s ease-out;
-    -o-transition:all 0.26s ease-out;
-    transition:all 0.26s ease-out;
-}
+.fadein {
+        opacity: 0;
+        -moz-transition: opacity 1.5s;
+        -webkit-transition: opacity 1.5s;
+        -o-transition: opacity 1.5s;
+        transition: opacity 1.5s;
+    }
 
-#body.loaded .comein {
-    opacity: 1;
-}
+    #body.loaded .fadein {
+        opacity: 1;
+    }
