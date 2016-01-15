@@ -11,8 +11,24 @@ body {
 }
 h2 {
   text-align: center;
-  color: white;
 }
+
+.home.active h2 {
+	color: #E3F2FD;
+}
+
+.latest h2 {
+	color: #FFF8E1;
+}
+
+.eariler h2 {
+	color: #FFEBEE;
+}
+
+.older h2 {
+	color: #E0F7FA;
+}
+
 p {
   padding: 0 100px;
   color: #fff;
