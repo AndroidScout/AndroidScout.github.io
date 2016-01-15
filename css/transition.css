@@ -6,3 +6,7 @@
     -o-transition:all 0.26s ease-out;
     transition:all 0.26s ease-out;
 }
+
+#body.loaded .comein {
+    opacity: 1;
+}
