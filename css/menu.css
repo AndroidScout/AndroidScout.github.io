@@ -8,8 +8,9 @@ body {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
-h1.title {
-  color: #212121 !important;
+h2 {
+  text-align: center;
+  color: white;
 }
 p {
   padding: 0 100px;
@@ -68,14 +69,14 @@ a.toggle:hover .bar {
 .contain section.home {
   background: #3399FF !important;
 }
-.contain section.about {
-  background: #FFC107;
+.contain section.latest {
+  background: #feb914 ! important;
 }
-.contain section.work {
-  background: #4CAF50;
+.contain section.eariler {
+  background: #f15a21 !important;
 }
-.contain section.contact {
-  background: #F44336;
+.contain section.older {
+  background: #6dc8bf !important;
 }
 .contain h1 {
   margin: 0;
@@ -133,9 +134,9 @@ a.toggle:hover .bar {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
-.contain.active h1 {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+.contain.active h2 {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
