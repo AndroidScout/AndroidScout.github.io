@@ -6,6 +6,6 @@
         transition: opacity 1.5s;
     }
 
-    .loaded .fadein {
-        opacity: 1;
-    }
+    !.loaded.fadein{
+       !opacity: 1;
+    !}
