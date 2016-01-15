@@ -1,7 +1,0 @@
-.fadein {
-        opacity: 0;
-        -moz-transition: opacity 1.5s;
-        -webkit-transition: opacity 1.5s;
-        -o-transition: opacity 1.5s;
-        transition: opacity 1.5s;
-    }
