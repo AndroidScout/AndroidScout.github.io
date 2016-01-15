@@ -5,7 +5,3 @@
         -o-transition: opacity 1.5s;
         transition: opacity 1.5s;
     }
-
-    !.loaded.fadein{
-       !opacity: 1;
-    !}
