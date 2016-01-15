@@ -208,7 +208,7 @@ a.toggle:hover .bar {
 .contain.active section:nth-child(4):hover {
   top: -1vh;
 }
-#triangle_right {
+.triangle_right {
     width: 120;
     height: 120;
     border-top: 70px solid transparent;
@@ -216,8 +216,8 @@ a.toggle:hover .bar {
     border-bottom: 70px solid transparent;
 }
 .triangle_left {
-    width: 0;
-    height: 0;
+    width: 120;
+    height: 120;
     border-top: 70px solid transparent;
     border-right: 140px solid #6bbf20;
     border-bottom: 70px solid transparent;
