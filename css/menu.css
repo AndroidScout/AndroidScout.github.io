@@ -1,4 +1,5 @@
 body {
+  text-rendering: optimizeLegibility;
   font-weight: 300;
   font-family: "Raleway", sans-serif;
   background: #fff;
