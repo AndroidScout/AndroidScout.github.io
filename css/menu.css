@@ -30,11 +30,18 @@ h2 {
 }
 
 p {
-  padding: 0 100px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.5;
-  font-family: "Merriweather", serif;
+  text-indent: 1em;
+}
+p.flow-text {
+  font-size: 1em;
+}
+div.card {
+  width: 500px;
+  display: inline-block;
+  margin:25px;
+}
+div.wrapper {
+  width: 100%;
 }
 
 a.toggle {
