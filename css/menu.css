@@ -208,7 +208,23 @@ a.toggle:hover .bar {
 .contain.active section:nth-child(4):hover {
   top: -1vh;
 }
- 
+.triangle_right {
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-left: 140px solid #ff5a00;
+    border-bottom: 70px solid transparent;
+}
+.triangle_left {
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-right: 140px solid #6bbf20;
+    border-bottom: 70px solid transparent;
+}
+
+
+
  
 !transitions: 
  
@@ -261,50 +277,3 @@ animation-delay: 2.1s;
 -moz-animation-delay: 0.2s;
 animation-delay: 0.2s;
 }
-
-.Object, .ObjectContainer main {
-			-webkit-transition: all 0.35s ease-in-out;
-			-moz-transition: all 0.35s ease-in-out;
-			-ms-transition: all 0.35s ease-in-out;
-			-o-transition: all 0.35s ease-in-out;
-			transition: all 0.35s ease-in-out;
-		}
-		.ObjectContainer {
-			width: 200px;
-			height: 200px;
-			float: left;
-			display: block;
-			position: relative;
-		}
-			.ObjectContainer .Object {
-				display: block;
-				width: 100%;
-				height: 100%;
-			}
-			.ObjectContainer main {
-				position: absolute;
-				bottom: -200px;
-				left: 0;
-				opacity: 0;
-				width: 100%;
-				line-height: 0px;
-				text-align: center;
-				vertical-align: middle;
-			}
-
-		.ObjectContainer:hover .Object {
-			margin: 2.5%;
-			height: 95%;
-			width: 95%;
-			border-radius: 100px;
-			-webkit-transform: rotate(100deg);
-			-moz-transform: rotate(100deg);
-			-ms-transform: rotate(100deg);
-			-o-transform: rotate(100deg);
-			transform: rotate(100deg);
-		}
-			.ObjectContainer:hover main {
-				opacity: 1;
-				bottom: 0;
-                line-height: 200px;
-			}
