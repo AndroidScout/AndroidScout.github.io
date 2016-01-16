@@ -31,7 +31,7 @@ body {
     border-top: 70px solid transparent;
     border-left: 140px solid #ff5a00;
     border-bottom: 35px solid transparent;
-    font-size:50px;
+    font-size: 50px;
 	-webkit-animation: rightThenLeft 0.5s ease-in-out;
 	-webkit-animation-delay: 2s;
 }
