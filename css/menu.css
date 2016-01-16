@@ -209,15 +209,15 @@ a.toggle:hover .bar {
   top: -1vh;
 }
 .triangle_right {
-    width: 120;
-    height: 120;
+    width: 500;
+    height: 500;
     border-top: 70px solid transparent;
     border-left: 140px solid #ff5a00;
     border-bottom: 70px solid transparent;
 }
-.triangle_left {
-    width: 120;
-    height: 120;
+#triangle_left {
+    width: 500;
+    height: 500;
     border-top: 70px solid transparent;
     border-right: 140px solid #6bbf20;
     border-bottom: 70px solid transparent;
