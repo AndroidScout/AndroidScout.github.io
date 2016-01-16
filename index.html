@@ -36,6 +36,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="css/hover.css" rel="stylesheet" media="all">
+<link href="css/animate.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/menu.css">
 </head>
 
@@ -43,14 +44,14 @@
 
 
 <div class="triangle_right">
-<span class="tlt" data-in-effect="flash">AndroidScout</span>
+<h3 class="tlt" data-in-effect="rollIn">AndroidScout</h3>
 </div>
 
 <div class="contain">
 
   <section class="home active">
 
-    <h2>Most Recent Uploads</h2>
+    <h2 class="home_header">Most Recent Uploads</h2>
     <div class="container"> <!-- Add margins to sides -->
       <div align="center" class="wrapper"> <!-- Aligns the content no matter size -->
 
@@ -145,7 +146,7 @@ function toggle_in() {
 }
 
 $(function () {
-    $('.tlt').textillate({ in: { effect: 'flash' } });
+    $('.tlt').textillate();
 })
 
 </script>
