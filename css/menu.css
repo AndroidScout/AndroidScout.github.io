@@ -25,24 +25,23 @@ body {
 }
 .triangle_right {
 	display: inline;
+	z-index: 2;
     width: 500;
     height: 500;
     border-top: 70px solid transparent;
     border-left: 140px solid #ff5a00;
     border-bottom: 35px solid transparent;
     font-size:50px;
-    -webkit-animation: rightThenLeft 0.5s ease-in-out;
-    -webkit-animation-delay: 1s
-	position: absolute;
-	z-index: 2;
+	-webkit-animation: rightThenLeft 0.5s ease-in-out;
+	-webkit-animation-delay: 2s;
 }
 
 .tlt {
-display: inline;
-padding-left: 1.5%;
+	display: inline;
+	padding-left: 1.5%;
     white-space: nowrap;
 	-webkit-animation: rightThenLeft 0.5s ease-in-out;
-	-webkit-animation-delay: 1s
+	-webkit-animation-delay: 2s
 }
 	
 	
