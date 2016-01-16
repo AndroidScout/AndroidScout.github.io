@@ -127,6 +127,14 @@ div.wrapper {
   width: 100%;
 }
 
+.santahat {
+	background:none;
+	pointer-events:none;
+	background-image: url(http://media.vector4free.com/mini/pixel77-free-vector-santa-0967-270x200.jpg);
+	position: fixed;
+	top: 30px;
+	left: 25px;
+}
 a.toggle {
   display: block;
   position: fixed;
