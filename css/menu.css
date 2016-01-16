@@ -1,3 +1,16 @@
+@-webkit-keyframes rightThenLeft {
+    0%   {margin-left:0%;}
+    50%  {margin-left:5%;}
+    100% {margin-left:0%;}
+}
+
+@-webkit-keyframes flip {
+    0% {-webkit-transform: rotateY(0deg);}
+	50% {-webkit-transform: rotateY(180deg);}
+    100% {-webkit-transform: rotateY(360deg);}
+}
+
+
 body {
   text-rendering: optimizeLegibility;
   font-weight: 300;
@@ -17,15 +30,13 @@ body {
     border-left: 140px solid #ff5a00;
     border-bottom: 70px solid transparent;
     font-size:50px;
-    -webkit-animation: rightThenLeft 1s linear;
-    margin-right: 50000px;
 }
 
 .thattexttho {
-    background: white;
+padding-left: 1.5%;
     white-space: nowrap;
-    -webkit-animation: rightThenLeft 2s linear;
-    margin-right: 10000px;
+	-webkit-animation: rightThenLeft 0.5s ease-in-out;
+	-webkit-animation-delay: 1s
 }
 	
 	
@@ -64,11 +75,13 @@ p {
 p.flow-text {
   font-size: 1em;
 }
+
 div.card {
   width: 500px;
   display: inline-block;
   margin:25px;
 }
+
 div.wrapper {
   width: 100%;
 }
@@ -293,10 +306,4 @@ animation-delay: 2.1s;
 -webkit-animation-delay: 0.2s;
 -moz-animation-delay: 0.2s;
 animation-delay: 0.2s;
-}
-
-@-webkit-keyframes rightThenLeft {
-    0%   {margin-right:100%;}
-    50%  {margin-right:0;}
-    100% {margin-right:100%;}
 }
