@@ -17,6 +17,8 @@ body {
     border-left: 140px solid #ff5a00;
     border-bottom: 70px solid transparent;
     font-size:50px;
+    -webkit-animation: rightThenLeft 2s linear;
+    margin-right: 10000px;
 }
 
 
@@ -286,4 +288,10 @@ animation-delay: 2.1s;
 -webkit-animation-delay: 0.2s;
 -moz-animation-delay: 0.2s;
 animation-delay: 0.2s;
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {margin-right:100%;}
+    50%  {margin-right:0;}
+    100% {margin-right:100%;}
 }
