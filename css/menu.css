@@ -18,6 +18,14 @@ body {
     border-left: 140px solid #ff5a00;
     border-bottom: 70px solid transparent;
 }
+
+.triangle-right p {
+	color:white;
+	text-transform: uppercase;
+	transform: rotate(90deg);
+	font-size: 20px;
+	
+}
 	
 	
 }
@@ -27,6 +35,13 @@ body {
     border-top: 70px solid transparent;
     border-right: 140px solid #6bbf20;
     border-bottom: 70px solid transparent;
+}
+
+#triangle_left p {
+		color:white;
+	text-transform: uppercase;
+	transform: rotate(90deg);
+	font-size: 20px;
 }
 
 h2 {
