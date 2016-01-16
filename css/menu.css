@@ -126,11 +126,6 @@ div.card {
 div.wrapper {
   width: 100%;
 }
-
-div.santa{
-	content: url(http://media.vector4free.com/mini/pixel77-free-vector-santa-0967-270x200.jpg);
-	
-}
 }
 a.toggle {
   display: block;
