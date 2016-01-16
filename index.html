@@ -22,6 +22,17 @@
 <head>
 <title>AndroidScout</title>
 <!-- Imports-->
+
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<!-- jQuery script references -->
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="./js/materialize.js"></script> 
+<!-- end of jQuery script references -->
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="css/hover.css" rel="stylesheet" media="all">
@@ -29,6 +40,7 @@
 </head>
 
 <body class="fade-in bod">
+
 
 <div class="triangle_right">
   <span class="thattexttho">AndroidScout</span>
@@ -111,8 +123,6 @@
   </section>
 </div>
 <a class="toggle" href="#"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a> 
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
-<script src="./js/materialize.js"></script> 
 <script type="text/javascript">
 
   $("a.toggle").on("click", toggle_out)
@@ -133,6 +143,10 @@ function toggle_in() {
   $(this).addClass("active");
   $(".contain").removeClass("active");
 }
+
+$(function () {
+    $('.thattexttho').textillate();
+})
 
 </script>
 </body>
