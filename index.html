@@ -37,6 +37,7 @@
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="css/hover.css" rel="stylesheet" media="all">
 <link href="css/animate.css" rel="stylesheet">
+<link rel="stylesheet" href="animate.min.css">
 <link rel="stylesheet" href="./css/menu.css">
 </head>
 
@@ -146,7 +147,7 @@ function toggle_in() {
 }
 
 $(function () {
-$('.tlt').textillate();
+$('.tlt').textillate({ in: { effect: 'slideInLeft' }});
 })
 
 </script>
