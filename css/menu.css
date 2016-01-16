@@ -17,6 +17,14 @@ body {
     border-left: 140px solid #ff5a00;
     border-bottom: 70px solid transparent;
 }
+.vertical_text {
+	content:"Android Scout";
+	transform: rotate(90deg);
+	transform-origin: right-top 0;
+	float: right;
+	
+	
+}
 #triangle_left {
     width: 500;
     height: 500;
