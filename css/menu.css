@@ -23,8 +23,9 @@ body {
           transform-style: preserve-3d;
           
 }
-.snow{
+.snow {
 	background: none;
+	pointer-events: none;
 	font-family: Androgyne;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
 	height: 100%;
