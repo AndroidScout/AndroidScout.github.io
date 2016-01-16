@@ -8,7 +8,23 @@ body {
   overflow: hidden;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+          
 }
+.triangle_right {
+    width: 500;
+    height: 500;
+    border-top: 70px solid transparent;
+    border-left: 140px solid #ff5a00;
+    border-bottom: 70px solid transparent;
+}
+#triangle_left {
+    width: 500;
+    height: 500;
+    border-top: 70px solid transparent;
+    border-right: 140px solid #6bbf20;
+    border-bottom: 70px solid transparent;
+}
+
 h2 {
   text-align: center;
 }
@@ -76,6 +92,8 @@ a.toggle:hover .bar {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
+
+
 .contain section {
   position: absolute;
   top: 100vh;
@@ -207,20 +225,6 @@ a.toggle:hover .bar {
 }
 .contain.active section:nth-child(4):hover {
   top: -1vh;
-}
-.triangle_right {
-    width: 500;
-    height: 500;
-    border-top: 70px solid transparent;
-    border-left: 140px solid #ff5a00;
-    border-bottom: 70px solid transparent;
-}
-#triangle_left {
-    width: 500;
-    height: 500;
-    border-top: 70px solid transparent;
-    border-right: 140px solid #6bbf20;
-    border-bottom: 70px solid transparent;
 }
 
 
