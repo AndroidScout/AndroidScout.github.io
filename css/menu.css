@@ -19,6 +19,7 @@ body {
   overflow: hidden;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+          
 }
 
 /* Snow */
@@ -195,7 +196,6 @@ a.toggle:hover .bar {
 }
 .contain section.home {
   background: #3399FF !important;
-  height: 100%;
 }
 .contain section.latest {
   background: #feb914 ! important;
