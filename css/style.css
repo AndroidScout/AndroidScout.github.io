@@ -89,6 +89,7 @@ a:hover {
   opacity: 1;
 }
 
+
 /* BUTTONS
 ***************/
 
@@ -231,7 +232,7 @@ a:hover {
           box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
-.playground .viewport .tlt {
+.playground .viewport .title {
   color: #fff;
   font-size: 1.5em;
   font-weight: 200;
