@@ -3,13 +3,11 @@
     50%  {margin-left:2.5%;}
     100% {margin-left:0%;}
 }
-
 @-webkit-keyframes flip {
     0% {-webkit-transform: rotateX(0deg);}
 	50% {-webkit-transform: rotateX(180deg);}
     100% {-webkit-transform: rotateX(360deg);}
 }
-
 
 body {
   text-rendering: optimizeLegibility;
@@ -23,6 +21,8 @@ body {
           transform-style: preserve-3d;
           
 }
+
+/* Snow */
 .snow {
 	background: none;
 	pointer-events: none;
@@ -58,8 +58,11 @@ body {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}	
-.triangle_right {
+}
+/* End of snow */
+
+/* Top left triangle */
+.triangle {
 	display: inline;
 	z-index: 2;
     width: 500;
@@ -72,7 +75,8 @@ body {
 	-webkit-animation-delay: 2s;
 }
 
-.tlt {
+/* AndrroidScout title */
+.title {
 	display: inline;
 	padding-left: 1.5%;
     white-space: nowrap;
@@ -84,21 +88,14 @@ body {
   padding: 10px;
   border: none;
   font: normal; 
-  color: rgba(255,255,255,1);
+  color: #424242;
   text-decoration: normal;
   text-align: center;
   -o-text-overflow: clip;
   text-overflow: clip;
   white-space: pre;
-  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #39FF14 , 0 0 70px #39FF14 , 0 0 80px #39FF14 , 0 0 100px #39FF14 ;
-  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
-}
-	
-	
+
 }
 #triangle_left {
     width: 500;
@@ -135,6 +132,8 @@ p.flow-text {
   font-size: 1em;
 }
 
+/* Secondary of cards
+  - main styles are found materialize.css - */
 div.card {
   width: 500px;
   display: inline-block;
@@ -143,7 +142,10 @@ div.card {
 
 div.wrapper {
   width: 100%;
+  height: 100%;
 }
+
+/* Menu */
 a.toggle {
   display: block;
   position: fixed;
@@ -165,9 +167,11 @@ a.toggle .bar {
   transition: all 500ms;
 }
 a.toggle:hover .bar {
-  background: white;
+  background: #E3F2FD;
 }
+/* End of menu */
 
+/* Menu selection */
 .contain {
   width: 100%;
   height: 100vh;
@@ -176,8 +180,6 @@ a.toggle:hover .bar {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
-
-
 .contain section {
   position: absolute;
   top: 100vh;
@@ -310,11 +312,10 @@ a.toggle:hover .bar {
 .contain.active section:nth-child(4):hover {
   top: -1vh;
 }
+/* End of selection */
 
-
-
- 
-!transitions: 
+/* Fading effect */
+transitions: 
  
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -365,3 +366,4 @@ animation-delay: 2.1s;
 -moz-animation-delay: 0.2s;
 animation-delay: 0.2s;
 }
+/* End of fading */
