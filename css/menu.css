@@ -60,16 +60,16 @@ body {
 }
 /* End of snow */
 
-/* Top left triangle */
+/* Top triangle */
 .triangle {
 	display: inline;
 	z-index: 2;
-    width: 500;
-    height: 500;
-    border-top: 70px solid transparent;
-    border-left: 140px solid #ff5a00;
-    border-bottom: 35px solid transparent;
-    font-size: 50px;
+  width: 500px;
+  height: 500px;
+  border-top: 70px solid transparent;
+  border-left: 140px solid #ff5a00;
+  border-bottom: 35px solid transparent;
+  font-size: 50px;
 	-webkit-animation: rightThenLeft 0.5s ease-in-out;
 	-webkit-animation-delay: 2s;
 }
@@ -78,9 +78,9 @@ body {
 .title {
 	display: inline;
 	padding-left: 1.5%;
-    white-space: nowrap;
 	-webkit-animation: rightThenLeft 0.5s ease-in-out;
 	-webkit-animation-delay: 2s;
+  font: normal; 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -89,12 +89,6 @@ body {
   font: normal;
   color: #424242;
   text-decoration: normal;
-  text-align: center;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  white-space: pre;
-}
-
 }
 #triangle_left {
     width: 500;
