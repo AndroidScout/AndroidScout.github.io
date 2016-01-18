@@ -66,6 +66,39 @@
 
 <body class="fade-in bod">
 
+<div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>Some news about the site!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
 <!-- Snow overlay -->
 <!--<div class="snow"> </div>-->
 
@@ -77,6 +110,8 @@
 </div>
 
 -->
+
+
 
 
 <div class="contain">
@@ -340,6 +375,10 @@
   </section>
 </div>
 <a class="toggle" href="#"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+
+
+
+<!-- Main page script -->
 <script type="text/javascript">
 
   $("a.toggle").on("click", toggle_out)
@@ -367,6 +406,13 @@ $('.title').textillate();
 
 jQuery("#responsive_headline").fitText();
 
+$(document).ready(function(){
+      $('.slider').slider({full_width: true, indicators: false});
+    });
+
 </script>
+<!-- End of Main page script -->
+
+
 </body>
 </html>
