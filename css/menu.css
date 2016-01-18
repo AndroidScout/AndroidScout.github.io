@@ -80,7 +80,7 @@ body {
 	padding-left: 1.5%;
 	-webkit-animation: rightThenLeft 0.5s ease-in-out;
 	-webkit-animation-delay: 2s;
-  font: normal; 
+  font: normal;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -131,7 +131,7 @@ div.card {
   width: 500px;
   display: inline-block;
   margin:25px;
-  box-shadow: 7px 7px 7px rgba(50,70,110,1);
+  box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
 }
 
 div.wrapper {
