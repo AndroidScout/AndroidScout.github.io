@@ -7750,7 +7750,6 @@ small {
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
   background-color: #fff;
-  box-shadow: 10px 10px 5px grey;
 }
 
 .card {
@@ -7759,7 +7758,6 @@ small {
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 2px;
-  box-shadow: 10px 10px 5px grey;
 }
 
 .card .card-title {
