@@ -178,8 +178,7 @@ a.toggle:hover .bar {
   position: absolute;
   top: 100vh;
   width: 100%;
-  height: 100vh;
-  overflow: scroll;
+  overflow: auto;
   -webkit-transition: top 500ms;
   transition: top 500ms;
   -webkit-transform-style: preserve-3d;
@@ -187,6 +186,7 @@ a.toggle:hover .bar {
 }
 .contain section.active {
   top: 0;
+  height: 100%;
 }
 .contain section.home {
   background: #3399FF !important;
