@@ -137,7 +137,7 @@ div.card {
   width: 500px;
   display: inline-block;
   margin:25px;
-  box-shadow: 10px 10px 5px rgba(50,70,110,1);
+  box-shadow: 7px 7px 7px rgba(50,70,110,1);
 }
 
 div.wrapper {
@@ -316,7 +316,7 @@ a.toggle:hover .bar {
 /* End of selection */
 
 /* Fading effect */
-transitions:
+!transitions:
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -324,7 +324,7 @@ transitions:
 
 
 .fade-in {
-    opacity:0;
+  opacity:0;
 	-webkit-animation:fadeIn ease-in 1;
 	-moz-animation:fadeIn ease-in 1;
 	animation:fadeIn ease-in 1;
