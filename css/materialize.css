@@ -2755,7 +2755,7 @@ video.responsive-video {
   }
   .pagination li.pages {
     width: 80%;
-    overflow: hidden;
+    overflow-y: scroll;
     white-space: nowrap;
   }
 }
