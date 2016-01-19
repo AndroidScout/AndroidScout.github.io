@@ -1,0 +1,31 @@
+div.intro {
+  font-family: 'open sans',arial,sans-serif;
+  font-size: 2em;
+  color: #eceff1;
+  text-align: center;
+  vertical-align: text-top;
+  margin-top: 100px;
+  padding: 0;
+}
+div.card {
+  width: 500px;
+  display: inline-block;
+  margin:25px;
+  box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
+}
+div.intro h2.subtitle {
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+div.card p.card_content_text {
+  color: black;
+}
+/* Adjust each shawdow */
+div#slide1 div.card {
+  box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
+}
+div#slide2 div.card {
+  box-shadow: 7.5px 7.5px 7.5px rgba(162,116,15,1);
+}
+div#slide3 div.card {
+  box-shadow: 7.5px 7.5px 7.5px rgba(163,50,14,1);
+}

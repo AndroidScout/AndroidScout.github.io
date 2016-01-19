@@ -18,73 +18,75 @@
 - Copyright © 2016 AndroidScout. All rights reserved.
 - Email of WebMaster: minimalistsoftware@gmail.com
 -->
-<html>
 <head>
-<title>AndroidScout</title>
-<!-- Imports-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>AndroidScout</title>
+	<!-- Scroll links -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+	<style>
+	body {
+		  text-rendering: optimizeLegibility;
+	}
+	/* Fixed header and footer.*/
+	#header, #footer{
+		position:fixed;
+		height: 100px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #eceff1;
+		padding: 20px 0 0 0;
+		font-family: 'open sans',arial,sans-serif;
+		font-size: 6em;
+    text-shadow: 4px 4px 0px rgba(255,255,255,0.1);
+	}
+	div#header h1 {
+		position: relative;
+		top:	-50px;
+		font-size: 1em;
+	}
 
-<!-- jQuery -->
-<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+	div#slide2 {
+		background-color: #feb914 !important;
+	}
+	div#slide3 {
+		background-color: #f15a21 !important;
+	}
+	</style>
 
-<!-- jQuery script references -->
-<script src="./js/jquery.fittext.js"></script>
-<script src="./js/jquery.lettering.js"></script>
-<script src="./js/jquery.textillate.js"></script>
-<script src="./js/materialize.js"></script>
-<!-- end of jQuery script references -->
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 
-<!-- CSS references -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
-<link href="./css/hover.css" rel="stylesheet">
-<link href="./css/animate.css" rel="stylesheet">
-<link rel="stylesheet" href="./css/animate.min.css">
-<link rel="stylesheet" href="./css/menu.css">
-<!-- End of CSS references -->
-
-<!-- Large ass fav icon reference -->
-<link rel="apple-touch-icon" sizes="57x57" href="./fav/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./fav/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./fav/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./fav/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./fav/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./fav/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./fav/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./fav/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./fav/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./fav/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
-<link rel="manifest" href="./fav/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./fav/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<!-- end of Large ass fav icon reference -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+	<script src="./js/materialize.js"></script>
 </head>
+<body>
 
-<body class="fade-in bod">
+<div id="header"><h1>ANDROID SCOUT<h1></div>
 
-<!-- Snow overlay -->
-<!--<div class="snow"> </div>-->
+<!-- MAIN SCROLL -->
+<div id="fullpage">
+	<!-- SECOND SLIDE-->
+	<div class="section" id="section0">
+		<!--SUB-SLIDE ONE -->
+	    <div class="slide" id="slide1">
+			<div class="intro" class="slide1">
+				<h2 class="subtitle">Most Recent Uploads</h2>
 
-<!--<div class="triangle">
-<h1 class="title" data-in-effect="flash">AndroidScout</h1>
-</div>-->
-
-<div class="contain">
-
-  <section class="home active">
-
-    <h2 class="home_header">Most Recent Uploads</h2>
-
-    <div class="container"> <!-- Add margins to sides -->
-      <div align="center" class="wrapper"> <!-- Aligns the content no matter size -->
-
-        <!-- Card -->
-        <div class="card small hvr-float fade-in one">
+				<div class="card small">
             <!-- Thumbnail picture -->
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
             <!-- Title -->
           <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
             <!-- Small decription -->
@@ -98,57 +100,10 @@
           </div> <!-- end of reveal -->
         </div> <!-- End of card -->
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in two">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in three">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="card small hvr-float fade-in four">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
-      </div> <!-- end of wrapper -->
-    </div> <!-- end of container-->
-  </section><!-- end of page -->
-  <section class="latest">
-    <h2 class="home_header">Latest Uploads</h2>
-
-    <div class="container"> <!-- Add margins to sides -->
-      <div align="center" class="wrapper"> <!-- Aligns the content no matter size -->
-
-        <!-- Card -->
-        <div class="card small hvr-float fade-in one">
+				<div class="card small">
             <!-- Thumbnail picture -->
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
             <!-- Title -->
           <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
             <!-- Small decription -->
@@ -162,57 +117,10 @@
           </div> <!-- end of reveal -->
         </div> <!-- End of card -->
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in two">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in three">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="card small hvr-float fade-in four">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
-      </div> <!-- end of wrapper -->
-    </div> <!-- end of container-->
-  </section>
-  <section class="eariler">
-    <h2 class="home_header">Earlier Uploads</h2> <!---->
-
-    <div class="container"> <!-- Add margins to sides -->
-      <div align="center" class="wrapper"> <!-- Aligns the content no matter size -->
-
-        <!-- Card -->
-        <div class="card small hvr-float fade-in one">
+				<div class="card small">
             <!-- Thumbnail picture -->
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
             <!-- Title -->
           <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
             <!-- Small decription -->
@@ -226,57 +134,10 @@
           </div> <!-- end of reveal -->
         </div> <!-- End of card -->
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in two">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in three">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="card small hvr-float fade-in four">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
-      </div> <!-- end of wrapper -->
-    </div> <!-- end of container-->
-  </section>
-  <section class="older">
-    <h2 class="home_header">Older Uploads</h2>
-
-    <div class="container"> <!-- Add margins to sides -->
-      <div align="center" class="wrapper"> <!-- Aligns the content no matter size -->
-
-        <!-- Card -->
-        <div class="card small hvr-float fade-in one">
+				<div class="card small">
             <!-- Thumbnail picture -->
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
             <!-- Title -->
           <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
             <!-- Small decription -->
@@ -290,76 +151,173 @@
           </div> <!-- end of reveal -->
         </div> <!-- End of card -->
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in two">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
+			</div>
+		</div>
+		<!--SUB-SLIDE TWO -->
+	    <div class="slide" id="slide2">
+				<div class="intro" class="slide2">
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in three">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
+					<h2 class="subtitle">Eariler Uploads</h2>
 
-        <!-- Card -->
-        <div class="card small hvr-float fade-in four">
-          <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-        </div>
-      </div> <!-- end of wrapper -->
-    </div> <!-- end of container-->
-  </section>
+					<div class="card small">
+							<!-- Thumbnail picture -->
+						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+							<!-- Title -->
+						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+							<!-- Small decription -->
+							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div>
+						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+							<!-- expand card -->
+							<h4>More info...</h4>
+							<i class="material-icons right">close</i></span>
+							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div> <!-- end of reveal -->
+					</div> <!-- End of card -->
+
+
+					<div class="card small">
+							<!-- Thumbnail picture -->
+						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+							<!-- Title -->
+						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+							<!-- Small decription -->
+							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div>
+						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+							<!-- expand card -->
+							<h4>More info...</h4>
+							<i class="material-icons right">close</i></span>
+							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div> <!-- end of reveal -->
+					</div> <!-- End of card -->
+
+
+					<div class="card small">
+							<!-- Thumbnail picture -->
+						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+							<!-- Title -->
+						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+							<!-- Small decription -->
+							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div>
+						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+							<!-- expand card -->
+							<h4>More info...</h4>
+							<i class="material-icons right">close</i></span>
+							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div> <!-- end of reveal -->
+					</div> <!-- End of card -->
+
+
+					<div class="card small">
+							<!-- Thumbnail picture -->
+						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+							<!-- Title -->
+						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+							<!-- Small decription -->
+							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div>
+						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+							<!-- expand card -->
+							<h4>More info...</h4>
+							<i class="material-icons right">close</i></span>
+							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+						</div> <!-- end of reveal -->
+					</div> <!-- End of card -->
+
+
+				</div>
+		</div>
+		<!--SUB-SLIDE THREE -->
+		<div class="slide" id="slide3">
+			<div class="intro" class="slide2">
+
+						<h2 class="subtitle">Older Uploads</h2>
+
+						<div class="card small">
+								<!-- Thumbnail picture -->
+							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+								<!-- Title -->
+							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+								<!-- Small decription -->
+								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div>
+							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+								<!-- expand card -->
+								<h4>More info...</h4>
+								<i class="material-icons right">close</i></span>
+								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div> <!-- end of reveal -->
+						</div> <!-- End of card -->
+
+
+						<div class="card small">
+								<!-- Thumbnail picture -->
+							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+								<!-- Title -->
+							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+								<!-- Small decription -->
+								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div>
+							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+								<!-- expand card -->
+								<h4>More info...</h4>
+								<i class="material-icons right">close</i></span>
+								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div> <!-- end of reveal -->
+						</div> <!-- End of card -->
+
+
+						<div class="card small">
+								<!-- Thumbnail picture -->
+							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+								<!-- Title -->
+							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+								<!-- Small decription -->
+								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div>
+							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+								<!-- expand card -->
+								<h4>More info...</h4>
+								<i class="material-icons right">close</i></span>
+								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div> <!-- end of reveal -->
+						</div> <!-- End of card -->
+
+
+						<div class="card small">
+								<!-- Thumbnail picture -->
+							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
+								<!-- Title -->
+							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
+								<!-- Small decription -->
+								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div>
+							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
+								<!-- expand card -->
+								<h4>More info...</h4>
+								<i class="material-icons right">close</i></span>
+								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+							</div> <!-- end of reveal -->
+						</div> <!-- End of card -->
+
+
+
+			</div>
+		</div>
+	</div>
+<!-- END OF SCROLLLEEEERRR-->
 </div>
-<a class="toggle" href="#"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
-<script type="text/javascript">
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['main'],
+        sectionsColor: ['#3399FF'],
+        css3: true
+      });
+    });
+  </script>
 
-  $("a.toggle").on("click", toggle_out)
-
-$("section").on("click", toggle_in)
-
-function toggle_out() {
-
-	$("section").scrollTop(0);
-  $(".contain").toggleClass("active");
-  return false;
-}
-
-function toggle_in() {
-
-//  $(this).closest("section").prependTo(".contain");
-  $("section").removeClass("active");
-  $(this).addClass("active");
-  $(".contain").removeClass("active");
-}
-
-$(function () {
-$('.title').textillate();
-})
-
-jQuery("#responsive_headline").fitText();
-
-</script>
 </body>
 </html>
