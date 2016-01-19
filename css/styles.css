@@ -23,9 +23,9 @@ div.card p.card_content_text {
 div#slide1 div.card {
   box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
 }
-div.slide2 div.card {
+div#slide2 div.card {
   box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
 }
-div.slide3 div.card {
+div#slide3 div.card {
   box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
 }
