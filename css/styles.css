@@ -19,3 +19,13 @@ div.intro h2.subtitle {
 div.card p.card_content_text {
   color: black;
 }
+/* Adjust each shawdow */
+div#slide1 div.card {
+  box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
+}
+div.slide2 div.card {
+  box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
+}
+div.slide3 div.card {
+  box-shadow: 7.5px 7.5px 7.5px rgba(50,70,110,1);
+}
