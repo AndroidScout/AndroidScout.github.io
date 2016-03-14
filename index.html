@@ -1,326 +1,311 @@
 <!DOCTYPE html>
-<!--
-╔═╗╔═╗────────────────╔╗────────╔╗
-║║╚╝║║────────────────║║───────╔╝╚╗
-║╔╗╔╗║╔╗╔═╗─╔╗╔╗╔╗╔══╗║║─╔╗╔══╗╚╗╔╝
-║║║║║║╠╣║╔╗╗╠╣║╚╝║║╔╗║║║─╠╣║══╣─║║
-║║║║║║║║║║║║║║║║║║║╔╗║║╚╗║║╠══║─║╚╗
-╚╝╚╝╚╝╚╝╚╝╚╝╚╝╚╩╩╝╚╝╚╝╚═╝╚╝╚══╝─╚═╝
-╔═══╗─────╔═╗─╔╗
-║╔═╗║─────║╔╝╔╝╚╗
-║╚══╗╔══╗╔╝╚╗╚╗╔╝╔╗╔╗╔╗╔══╗╔═╗╔══╗
-╚══╗║║╔╗║╚╗╔╝─║║─║╚╝╚╝║║╔╗║║╔╝║║═╣
-║╚═╝║║╚╝║─║║──║╚╗╚╗╔╗╔╝║╔╗║║║─║║═╣
-╚═══╝╚══╝─╚╝──╚═╝─╚╝╚╝─╚╝╚╝╚╝─╚══╝
+<html lang="en">
 
-- Created by Ryan Guarascia on 2016-01-15.
-- Contributors: Eran Machlev & Garrett Tucker
-- Copyright © 2016 AndroidScout. All rights reserved.
-- Email of WebMaster: minimalistsoftware@gmail.com
--->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>AndroidScout</title>
-	<!-- Scroll links -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-	<style>
-	body {
-		  text-rendering: optimizeLegibility;
-	}
-	/* Fixed header and footer.*/
-	#header, #footer{
-		position:fixed;
-		height: 100px;
-		display:block;
-		width: 100%;
-		background: #333;
-		z-index:9;
-		text-align:center;
-		color: #eceff1;
-		padding: 20px 0 0 0;
-		font-family: 'open sans',arial,sans-serif;
-		font-size: 6em;
-    text-shadow: 4px 4px 0px rgba(255,255,255,0.1);
-	}
-	div#header h1 {
-		position: relative;
-		top:	-50px;
-		font-size: 1em;
-	}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Design Bootstrap Template</title>
 
-	div#slide2 {
-		background-color: #feb914 !important;
-	}
-	div#slide3 {
-		background-color: #f15a21 !important;
-	}
-	a {
-		color: inherit;
-	}
-	</style>
+  <!-- Material Design Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
-	<script src="./js/materialize.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+
+  <!-- Template style -->
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-<div id="header"><a href="http://twopeaceextraspicy.com/as/index.html"><h1>ANDROID SCOUT<h1></a></div>
+  <!-- Navigation -->
+  <nav class="navbar z-depth-2 info-color">
+    <div class="container ">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand waves-effect waves-light" href="#">AndroidScout</a>
+      </div>
 
-<!-- MAIN SCROLL -->
-<div id="fullpage">
-	<!-- SECOND SLIDE-->
-	<div class="section" id="section0">
-		<!--SUB-SLIDE ONE -->
-	    <div class="slide" id="slide1">
-			<div class="intro" class="slide1">
-				<h2 class="subtitle">Most Recent Uploads</h2>
-
-				<div class="card small">
-            <!-- Thumbnail picture -->
-          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-            <!-- Title -->
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <!-- Small decription -->
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#" class="waves-effect waves-light">Home <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">ROM Reviews<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">A-D</a>
+              </li>
+              <li><a href="#">E-H</a>
+              </li>
+              <li><a href="#">I-P</a>
+              </li>
+              <li><a href="#">Q-V</a>
+              </li>
+              <li><a href="#">W-Z</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">Tech<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Phones</a>
+              </li>
+              <li><a href="#">Hardware</a>
+              </li>
+              <li><a href="#">Software</a>
+              </li>
+              <li><a href="#">Random Nonesense</a>
+              </li>
+              <li><a href="#">Rez's Dildos</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">Guest Work<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Concepts</a>
+              </li>
+              <li><a href="#">Reviews</a>
+              </li>
+              <li><a href="#">Photos</a>
+              </li>
+              <li><a href="#">Submit</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#products" class="waves-effect waves-light">About</a></li>
+          <li><a href="#products" class="waves-effect waves-light">Support Us</a></li>
+        </ul>
+        <form class="navbar-form navbar-right waves-effect waves-light" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
           </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <!-- expand card -->
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div> <!-- end of reveal -->
-        </div> <!-- End of card -->
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header" id="products">Our Latest
+                    <small>and greatest</small>
+                </h1>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Project One -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-responsive z-depth-1 hoverable" src="img/project1.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5" id="videomaker">
+        <h3>Video Maker</h3>
+        <h4>Crafted to delight</h4>
+        <p>Some things just look better in motion and in the highly competitive world of fashion, finding an edge over the competition is crucial. When it comes to clothes, hair, make-up and jewellery nothing compares to seeing moving images. So why not give your audience what they prefer?</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Read more</button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Two -->
+    <div class="row">
+      <div class="col-md-7" id="mdb">
+        <a href="#">
+          <img class="img-responsive z-depth-1 hoverable" src="img/project2.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>Material Design for Bootstrap</h3>
+        <h4>Responsive, powerful, light.</h4>
+        <p>Google designed a Material Design to make a web more beautiful. Twitter created a Bootstrap to support you in faster and easier development of responsive websites. Material Design for Bootstrap contains both!</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Read more</button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Three -->
+    <div class="row">
+      <div class="col-md-7" if="creativeagency">
+        <a href="#">
+          <img class="img-responsive z-depth-1 hoverable" src="img/project3.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5" id="creativeagency">
+        <h3>Creative Agency</h3>
+        <h4>Great even greater</h4>
+        <p>Did you know that a strong brand is absolutely essential for generating sales and growth on Social Media? You may not have given a lot of importance to your brand identity yet, but you surely have one. Let us take care of your branding and visibility both in online and offline world.</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Read more</button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Four -->
+    <div class="row">
+
+      <div class="col-md-7" id="photographer">
+        <a href="#">
+          <img class="img-responsive z-depth-1 hoverable" src="img/project4.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>Photographer Portfolio</h3>
+        <h4>You don’t take a photograph, you make it.</h4>
+        <p>Photography is an art of observation. It’s about finding something interesting an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Read more</button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Five -->
+    <div class="row">
+      <div class="col-md-7" id="service">
+        <a href="#">
+          <img class="img-responsive z-depth-1 hoverable" src="img/project5.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>Services Portfolio</h3>
+        <h4>Designed to impress</h4>
+        <p>We offer a variety of advertising services focusing on your goals. You could say we are a one-stop shop for small to medium sized businesses. From online to offline with Web site design, Social Media maintenance, Print design, Photography... we can do it all.</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Read more</button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Pagination
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <ul class="pagination">
+          <li>
+            <a href="#">&laquo;</a>
+          </li>
+          <li class="active">
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#">&raquo;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    row -->
+
+    <hr>
+
+  </div>
+  <!-- /.container -->
 
 
-				<div class="card small">
-            <!-- Thumbnail picture -->
-          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-            <!-- Title -->
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <!-- Small decription -->
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <!-- expand card -->
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div> <!-- end of reveal -->
-        </div> <!-- End of card -->
+  <!-- Footer -->
+  <footer class="page-footer info-color darken-1" if="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <p class="white-text center-on-small-only">GET STARTED</p>
+          <p class="white-text center-on-small-only">Register to start to create amazing things.</p>
+          <a href="#" class="btn btn-danger waves-effect waves-light">Get started!</a>
+
+        </div>
+        <hr class="hidden-lg hidden-md">
+
+        <div class="col-md-2">
+          <p class="white-text center-on-small-only">USEFUL LINKS</p>
+          <ul>
+            <li><a href="#" data-toggle="modal" data-target="#myModal" class="grey-text text-lighten-3" href="#!">Contact us</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="#" target="_blank">About Us</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="#" target="_blank">Support</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="#" target="_blank">Bug report</a>
+            </li>
 
 
-				<div class="card small">
-            <!-- Thumbnail picture -->
-          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-            <!-- Title -->
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <!-- Small decription -->
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <!-- expand card -->
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div> <!-- end of reveal -->
-        </div> <!-- End of card -->
+          </ul>
+        </div>
+        <hr class="hidden-lg hidden-md">
+
+        <div class="col-md-3 text-center">
+          <p class="white-text text-center"> SOCIAL MEDIA</p>
+          <a target="_blank" href="https://www.facebook.com/" class="btn-floating btn-large fb-bg waves-effect waves-light"><i class="fa fa-facebook"> </i></a>
+          <a target="_blank" href="https://twitter.com/" class="btn-floating btn-large tw-bg waves-effect waves-light"><i class="fa fa-twitter"> </i></a>
+          <a target="_blank" href="https://plus.google.com/" class="btn-floating btn-large gplus-bg waves-effect waves-light"><i class="fa fa-google-plus"> </i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1"> © 2015 Copyright <a href="#">AndroidScout </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-				<div class="card small">
-            <!-- Thumbnail picture -->
-          <div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-            <!-- Title -->
-          <div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-            <!-- Small decription -->
-            <p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div>
-          <div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-            <!-- expand card -->
-            <h4>More info...</h4>
-            <i class="material-icons right">close</i></span>
-            <p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          </div> <!-- end of reveal -->
-        </div> <!-- End of card -->
+  <!-- SCRIPTS -->
 
-			</div>
-		</div>
-		<!--SUB-SLIDE TWO -->
-	    <div class="slide" id="slide2">
-				<div class="intro" class="slide2">
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 
-					<h2 class="subtitle">Eariler Uploads</h2>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-					<div class="card small">
-							<!-- Thumbnail picture -->
-						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-							<!-- Title -->
-						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-							<!-- Small decription -->
-							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div>
-						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-							<!-- expand card -->
-							<h4>More info...</h4>
-							<i class="material-icons right">close</i></span>
-							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div> <!-- end of reveal -->
-					</div> <!-- End of card -->
+  <!-- Material Design Bootstrap -->
+  <script type="text/javascript" src="js/mdb.js"></script>
 
 
-					<div class="card small">
-							<!-- Thumbnail picture -->
-						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-							<!-- Title -->
-						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-							<!-- Small decription -->
-							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div>
-						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-							<!-- expand card -->
-							<h4>More info...</h4>
-							<i class="material-icons right">close</i></span>
-							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div> <!-- end of reveal -->
-					</div> <!-- End of card -->
-
-
-					<div class="card small">
-							<!-- Thumbnail picture -->
-						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-							<!-- Title -->
-						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-							<!-- Small decription -->
-							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div>
-						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-							<!-- expand card -->
-							<h4>More info...</h4>
-							<i class="material-icons right">close</i></span>
-							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div> <!-- end of reveal -->
-					</div> <!-- End of card -->
-
-
-					<div class="card small">
-							<!-- Thumbnail picture -->
-						<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-							<!-- Title -->
-						<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-							<!-- Small decription -->
-							<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div>
-						<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-							<!-- expand card -->
-							<h4>More info...</h4>
-							<i class="material-icons right">close</i></span>
-							<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-						</div> <!-- end of reveal -->
-					</div> <!-- End of card -->
-
-
-				</div>
-		</div>
-		<!--SUB-SLIDE THREE -->
-		<div class="slide" id="slide3">
-			<div class="intro" class="slide2">
-
-						<h2 class="subtitle">Older Uploads</h2>
-
-						<div class="card small">
-								<!-- Thumbnail picture -->
-							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-								<!-- Title -->
-							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-								<!-- Small decription -->
-								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div>
-							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-								<!-- expand card -->
-								<h4>More info...</h4>
-								<i class="material-icons right">close</i></span>
-								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div> <!-- end of reveal -->
-						</div> <!-- End of card -->
-
-
-						<div class="card small">
-								<!-- Thumbnail picture -->
-							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-								<!-- Title -->
-							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-								<!-- Small decription -->
-								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div>
-							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-								<!-- expand card -->
-								<h4>More info...</h4>
-								<i class="material-icons right">close</i></span>
-								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div> <!-- end of reveal -->
-						</div> <!-- End of card -->
-
-
-						<div class="card small">
-								<!-- Thumbnail picture -->
-							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-								<!-- Title -->
-							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-								<!-- Small decription -->
-								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div>
-							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-								<!-- expand card -->
-								<h4>More info...</h4>
-								<i class="material-icons right">close</i></span>
-								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div> <!-- end of reveal -->
-						</div> <!-- End of card -->
-
-
-						<div class="card small">
-								<!-- Thumbnail picture -->
-							<div class="card-image"> <img class="activator" src="https://raw.githubusercontent.com/AndroidScout/AndroidScout.github.io/master/images/thumb-1.png"> </div>
-								<!-- Title -->
-							<div class="card-content"> <span class="card-title activator grey-text text-darken-4"><a href="#" class="card_title_text">[Review]The New LG G18</a><i class="material-icons right">launch</i></span>
-								<!-- Small decription -->
-								<p class="card_content_text">How does the LG"s blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div>
-							<div class="card-reveal"> <span class="card-title grey-text text-darken-4">
-								<!-- expand card -->
-								<h4>More info...</h4>
-								<i class="material-icons right">close</i></span>
-								<p class="flowtext-">Give a quick summary of the article here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-							</div> <!-- end of reveal -->
-						</div> <!-- End of card -->
-
-
-
-			</div>
-		</div>
-	</div>
-<!-- END OF SCROLLLEEEERRR-->
-</div>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        anchors: ['main'],
-        sectionsColor: ['#3399FF'],
-        css3: true
-      });
-    });
-  </script>
 
 </body>
+
 </html>
