@@ -3,10 +3,6 @@
 
 //define global variables here
 
-if(isset($_GET['read'])) {
-   $postid = $_GET['read'];
- }
-
 ?>
 
 
